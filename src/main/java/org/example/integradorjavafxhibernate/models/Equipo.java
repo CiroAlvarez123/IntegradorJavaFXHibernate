@@ -1,3 +1,5 @@
+package org.example.integradorjavafxhibernate.models;
+
 public class Equipo {
     private Long id;
     private String nombre;
