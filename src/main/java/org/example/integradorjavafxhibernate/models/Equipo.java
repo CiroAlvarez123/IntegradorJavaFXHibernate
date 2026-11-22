@@ -1,10 +1,21 @@
 package org.example.integradorjavafxhibernate.models;
+import jakarta.persistence.*;
 
-public class Equipo {
+    @Entity
+    @Table(name = "Equipo")
+    public class Equipo {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nombre;
     private String categoria;
     private Boolean disponible;
+
+    public Equipo() {
+
+    }
 
     public Long getId() {
         return id;

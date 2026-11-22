@@ -6,13 +6,12 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mi_bd</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Acceso</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">pwd</property>
 
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-
         <mapping class="org.example.integradorjavafxhibernate.models.Equipo"/>
     </session-factory>
 </hibernate-configuration>
